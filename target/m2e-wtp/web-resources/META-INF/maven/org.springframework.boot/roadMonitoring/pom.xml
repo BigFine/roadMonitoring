@@ -23,6 +23,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<!-- 排除内置容器，排除内置容器导出成war包可以让外部容器运行spring-boot项目 -->
 		</dependency>
+		<!-- 搜索引擎elasticsearch -->
+		 <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -117,7 +122,7 @@
 					<encoding>${project.build.sourceEncoding}</encoding>
 					<skipTests>true</skipTests>
 					<!-- 打成war包时名子 -->
-					<warName>wechatServer</warName>
+					<warName>roadMonitoring</warName>
 					<!-- mave时启用的main路径（因为其他包里面测试时也加了main函数） -->
 					<mainClass>${start-class}</mainClass>
 					<skip>true</skip><!-- 跳过测试 -->
