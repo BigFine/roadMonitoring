@@ -24,10 +24,10 @@
 			<!-- 排除内置容器，排除内置容器导出成war包可以让外部容器运行spring-boot项目 -->
 		</dependency>
 		<!-- 搜索引擎elasticsearch -->
-		 <dependency>
+		<!--  <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-        </dependency>
+        </dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
